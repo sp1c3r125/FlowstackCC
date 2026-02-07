@@ -1,54 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FlowStack OS | Revenue Intelligence</title>
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              background: "#0a0a0a",
-              foreground: "#ededed",
-              primary: {
-                DEFAULT: "#00f0ff", // Neon Cyan
-                foreground: "#000000",
-              },
-              secondary: {
-                DEFAULT: "#1f1f1f",
-                foreground: "#a1a1aa",
-              },
-              accent: {
-                DEFAULT: "#7000ff", // Neon Purple
-                foreground: "#ffffff",
-              },
-              border: "#27272a",
-              input: "#27272a",
-              ring: "#00f0ff",
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowStack OS | Autonomous Revenue Intelligence & Automation</title>
+  <meta name="description"
+    content="FlowStack OS: The autonomous engine for revenue growth. Scaling revenue through deterministic automation, precision intelligence, and seamless ecosystem integrations." />
+  <meta name="keywords"
+    content="autonomous revenue, automation agency, n8n automation, revenue intelligence, flowstack, bookedos, clientflow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://flowstack.os/" />
+  <meta property="og:title" content="FlowStack OS | Autonomous Revenue Intelligence" />
+  <meta property="og:description"
+    content="Scale your revenue with deterministic automation. Precision at scale. Certainty by design." />
+  <meta property="og:image" content="/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://flowstack.os/" />
+  <meta property="twitter:title" content="FlowStack OS | Autonomous Revenue Intelligence" />
+  <meta property="twitter:description"
+    content="Scale your revenue with deterministic automation. Precision at scale. Certainty by design." />
+  <meta property="twitter:image" content="/og-image.jpg" />
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            background: "#0a0a0a",
+            foreground: "#ededed",
+            primary: {
+              DEFAULT: "#00f0ff", // Neon Cyan
+              foreground: "#000000",
             },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              mono: ['JetBrains Mono', 'monospace'],
+            secondary: {
+              DEFAULT: "#1f1f1f",
+              foreground: "#a1a1aa",
             },
-            animation: {
-              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-            }
+            accent: {
+              DEFAULT: "#7000ff", // Neon Purple
+              foreground: "#ffffff",
+            },
+            border: "#27272a",
+            input: "#27272a",
+            ring: "#00f0ff",
           },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          animation: {
+            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          }
         },
-      }
-    </script>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- KaTeX for math -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+      },
+    }
+  </script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- KaTeX for math -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+    integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+    integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+    crossorigin="anonymous"></script>
   <script type="importmap">
 {
   "imports": {
@@ -65,66 +91,70 @@
   }
 }
 </script>
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Custom Range Slider Styling for Industrial Feel */
-  input[type=range] {
-    -webkit-appearance: none; 
-    background: transparent; 
-  }
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-  input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 2px;
-    background: #00f0ff;
-    cursor: pointer;
-    margin-top: -6px; 
-    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-  }
+    /* Custom Range Slider Styling for Industrial Feel */
+    input[type=range] {
+      -webkit-appearance: none;
+      appearance: none;
+      background: transparent;
+    }
 
-  input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 4px;
-    cursor: pointer;
-    background: #1f1f1f;
-    border-radius: 2px;
-    border: 1px solid #333;
-  }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 16px;
+      width: 16px;
+      border-radius: 2px;
+      background: #00f0ff;
+      cursor: pointer;
+      margin-top: -6px;
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+    }
 
-  input[type=range]:focus::-webkit-slider-thumb {
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.8), 0 0 0 2px rgba(0,0,0,0.5);
-  }
+    input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 4px;
+      cursor: pointer;
+      background: #1f1f1f;
+      border-radius: 2px;
+      border: 1px solid #333;
+    }
 
-  /* Firefox */
-  input[type=range]::-moz-range-thumb {
-    height: 16px;
-    width: 16px;
-    border-radius: 2px;
-    background: #00f0ff;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.8);
-  }
+    input[type=range]:focus::-webkit-slider-thumb {
+      box-shadow: 0 0 15px rgba(0, 240, 255, 0.8), 0 0 0 2px rgba(0, 0, 0, 0.5);
+    }
 
-  input[type=range]::-moz-range-track {
-    width: 100%;
-    height: 4px;
-    cursor: pointer;
-    background: #1f1f1f;
-    border-radius: 2px;
-    border: 1px solid #333;
-  }
-</style>
-<link rel="stylesheet" href="/index.css">
+    /* Firefox */
+    input[type=range]::-moz-range-thumb {
+      height: 16px;
+      width: 16px;
+      border-radius: 2px;
+      background: #00f0ff;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    input[type=range]::-moz-range-track {
+      width: 100%;
+      height: 4px;
+      cursor: pointer;
+      background: #1f1f1f;
+      border-radius: 2px;
+      border: 1px solid #333;
+    }
+  </style>
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-background text-foreground font-sans antialiased overflow-x-hidden selection:bg-primary/20 selection:text-primary">
-    <div id="root"></div>
+
+<body
+  class="bg-background text-foreground font-sans antialiased overflow-x-hidden selection:bg-primary/20 selection:text-primary">
+  <div id="root" role="main"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
